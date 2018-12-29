@@ -1,4 +1,4 @@
-var base_url = "http://192.168.1.104:8080";
+var base_url = "http://localhost:8080";
 function cambiar_login() {
   document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";  
 document.querySelector('.cont_form_login').style.display = "block";

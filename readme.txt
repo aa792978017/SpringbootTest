@@ -24,17 +24,40 @@ mysql版本：8
 访问前需要修改网页请求的base_url，保证请求畅通
 
 
+
+
 base_url 在项目文件的相对位置：agiletest\src\main\resources\static\static\js    下，自行定制修改
  
 
-在静态资源文件custom.js的头部修改  var base_url = "http://localhost:8080";（这里为默认的请求基地址）
+在静态资源文件custom.js以及loginJS.js的头部修改  var base_url = "http://localhost:8080";（这里为默认的请求基地址）
 
+该项目部分静态资源需要联网获取，打开浏览器访问前，请保证网络畅通，否则可能出现一些页面样式丢失等问题
 
 确保上述正确后，即可打开项目(以agiletest文件夹为根目录)，使用maven导包运行
 
 
+注意，项目额外添加了两个依赖，如果是从csdn看到我的博客过来的，自行构建项目目录的时候要额外再pom.xml文件里面添加两个依赖
+
+<!--json数据转化接收工具-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.49</version>
+		</dependency>
+
+<!-- alibaba的druid数据库连接池 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid-spring-boot-starter</artifactId>
+			<version>1.1.10</version>
+		</dependency>
+
+
+
 访问地址：
 http://localhost:8080/static/fontpage/login.html
+
+
 
 
 
