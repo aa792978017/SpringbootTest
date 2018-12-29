@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--对应接口，写入sql语句-->
+
+<mapper namespace="com.agile.agiletest.dao.UserDao">
+
+
+    <update id="updateUserRegisterInfo" parameterType="com.agile.agiletest.pojo.User">
+        UPDATE `user` set
+        <if test="password != null and password != ''">
+            password = #{password}
+        </if>
+        <if test="personId != 0">
+            , person_id = #{personId}
+        </if>
+        where username = #{username}
+
+    </update>
+
+
+</mapper>

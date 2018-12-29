@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Electrician';
+  src:  url('fonts/Electrician.eot?q5ohg5');
+  src:  url('fonts/Electrician.eot?q5ohg5#iefix') format('embedded-opentype'),
+    url('fonts/Electrician.ttf?q5ohg5') format('truetype'),
+    url('fonts/Electrician.woff?q5ohg5') format('woff'),
+    url('fonts/Electrician.svg?q5ohg5#Electrician') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Electrician' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow_right:before {
+  content: "\e91a";
+}
+.icon-arrow_left:before {
+  content: "\e91b";
+}
+.icon-speech:before {
+  content: "\e919";
+}
+.icon-cancel:before {
+  content: "\e918";
+}
+.icon-arrow-left:before {
+  content: "\e916";
+}
+.icon-arrow-right:before {
+  content: "\e917";
+}
+.icon-light:before {
+  content: "\e900";
+}
+.icon-air-conditioner:before {
+  content: "\e901";
+}
+.icon-security-camera:before {
+  content: "\e902";
+}
+.icon-tool:before {
+  content: "\e903";
+}
+.icon-screwdriver:before {
+  content: "\e904";
+}
+.icon-computer:before {
+  content: "\e905";
+}
+.icon-check:before {
+  content: "\e906";
+}
+.icon-circle:before {
+  content: "\e907";
+}
+.icon-facebook:before {
+  content: "\e908";
+}
+.icon-favorite:before {
+  content: "\e909";
+}
+.icon-google-plus:before {
+  content: "\e90a";
+}
+.icon-instagram:before {
+  content: "\e90b";
+}
+.icon-interface:before {
+  content: "\e90c";
+}
+.icon-left-quote:before {
+  content: "\e90d";
+}
+.icon-lightning:before {
+  content: "\e90e";
+}
+.icon-linkedin:before {
+  content: "\e90f";
+}
+.icon-map-marker:before {
+  content: "\e910";
+}
+.icon-right-quote-sign:before {
+  content: "\e911";
+}
+.icon-technology:before {
+  content: "\e912";
+}
+.icon-telephone:before {
+  content: "\e913";
+}
+.icon-tumblr:before {
+  content: "\e914";
+}
+.icon-twitter:before {
+  content: "\e915";
+}
+

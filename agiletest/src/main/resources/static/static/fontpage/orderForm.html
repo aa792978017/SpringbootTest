@@ -1,0 +1,497 @@
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="html 5 template">
+<meta name="author" content="tonytemplates.com">
+<link rel="icon" href="favicon.ico">
+<title>订单信息</title>
+<!-- Bootstrap core CSS -->
+<link href="../css/plugins/bootstrap.min.css" rel="stylesheet">
+<link href="../css/plugins/bootstrap-submenu.css" rel="stylesheet">
+<link href="../css/plugins/animate.min.css" rel="stylesheet">
+<link href="../css/plugins/nivo-slider.css" rel="stylesheet">
+<link href="../css/plugins/slick.css" rel="stylesheet">
+<link href="../css/plugins/magnific-popup.css" rel="stylesheet">
+<link href="../css/custom.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!-- Icon Font-->
+<link href="../iconfont/style.css" rel="stylesheet">
+<!-- Google Fonts -->
+<link
+	href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,400,500,700,900"
+	rel="stylesheet">
+<!-- Google map -->
+<!---<script type="text/javascript" src="http://ditu.google.cn/maps/api/js"></script>--->
+</head>
+
+<body class="home">
+	<!-- Loader -->
+	<div id="loader-wrapper" class="loader-on">
+		<div id="loader">
+			<div class="loader">
+				<div class="bolt one">
+					<div class="other"></div>
+				</div>
+				<div class="bolt two">
+					<div class="other"></div>
+				</div>
+				<div class="bolt three">
+					<div class="other"></div>
+				</div>
+				加载中
+			</div>
+		</div>
+	</div>
+	<!-- //Loader -->
+	<!-- Header -->
+	<header class="page-header">
+		<!-- Fixed navbar -->
+		<nav class="navbar" id="slide-nav">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="header-top">
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="social-links">
+									<ul>
+										<li><a class="icon icon-twitter" href="#"></a></li>
+										<li><a class="icon icon-facebook" href="#"></a></li>
+										<li><a class="icon icon-instagram" href="#"></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-4 text-center">
+								<div class="logo">
+									<a href="index.html"><img src="../images/logo.png"
+															  alt="Logo"> <span><img src="../images/bolt.gif"
+																					 alt=""></span></a>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="phone">
+									<div class="number">
+										<i class="icon icon-telephone"></i><span>1 (800)
+											765-43-21</span>
+									</div>
+									<div class="under-number">Call us now. Resistance is
+										futile!</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="navbar-toggle">
+						<i class="icon icon-interface icon-menu"></i><i
+							class="icon icon-cancel"></i>
+					</button>
+				</div>
+				<div id="slidemenu" data-hover="dropdown" data-animations="fadeIn">
+					<ul class="nav navbar-nav">
+						<li ><a href="index.html"><span class="electric-btn"><span class="text">首页</span></span></a></li>
+						<li class="active"><a href="orderForm.html"><span class="electric-btn"><span class="text">订单</span></span></a></li>
+						<li><a href="prices.html"><span class="electric-btn"><span class="text">火车票</span></span></a></li>
+						<li ><a href="contact.html"><span class="electric-btn"><span class="text">个人信息</span></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- // Header -->
+	<!-- Content  -->
+	<div id="page-content">
+		<!-- Breadcrumbs Block -->
+		<div class="container">
+			<div class="breadcrumbs">
+				<ul class="breadcrumb">
+					<li><a href="index.html">首页</a></li>
+					<li class="active">火车票</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //Breadcrumbs Block -->
+		<!-- Block -->
+		<div class="block">
+			<div class="container">
+				<h1 class="text-center">
+					订单 <b>信息</b>
+				</h1>
+				<p class="font24 text-center">点击订单的查看订单进行退票或者改签操作</p>
+				<div class="table-wrapper">
+					<table id="orderTable" class="table price-table" id="orderTable">
+						<tbody>
+							<tr class="table-header">
+								<th>乘车人</th>
+								<th>始发地</th>
+								<th>出发时间</th>
+								<th>目的地</th>
+								<th>到达时间</th>
+								<th>班次号</th>
+								<th>价格</th>
+								<th>订单状态</th>
+								<th>操作</th>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- //Block -->
+	</div>
+	<!-- // Content  -->
+	
+	<div class="block">
+			<h1 class="text-center decor color">
+				订单 <b>详细信息</b>
+			</h1>
+			<div class="divider"></div>
+		</div>
+		
+	<div class="block">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5 col-md-3">
+						<div class="address">
+							<div class="address-block">
+								<i class="icon icon-map-marker"></i>
+								<h6 class="text-uppercase">Our address:</h6>
+								8494 Signal Hill Road <br> Manassas, VA, 20110
+							</div>
+							<div class="address-block">
+								<i class="icon icon-telephone"></i>
+								<h6 class="text-uppercase">Call us:</h6>
+								1 (800) 765-43-21
+							</div>
+							<div class="divider-sm"></div>
+							<h6>Have any questions?</h6>
+							<p>
+								<a href="#">noreply@envato.com</a> <br> <a href="#">www.envato.com</a>
+							</p>
+						</div>
+						<div class="divider"></div>
+						<div class="social-links">
+							<ul>
+								<li><a class="icon icon-twitter" href="#"></a></li>
+								<li><a class="icon icon-facebook" href="#"></a></li>
+								<li><a class="icon icon-google-plus" href="#"></a></li>
+								<li><a class="icon icon-linkedin" href="#"></a></li>
+								<li><a class="icon icon-instagram" href="#"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-1 visible-lg"></div>
+					<div class="col-sm-7 col-md-8">
+						<form  class="contact-form"
+							>
+							<div id="success">
+								<p>您的信息更新成功！</p>
+							</div>
+							<div id="error">
+								<p>信息更新出错！请再次提交！</p>
+							</div>
+							<div class="inputs-col">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="input-wrapper">
+											<label>姓名 <span class="required"></span></label> <input
+												type="text" class="input-custom input-full" id="trueName" name="trueName">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="input-wrapper">
+											<label>电话</label> <input type="text"
+												class="input-custom input-full" id="phone" name="phone">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="input-wrapper">
+											<label>身份证号 <span class="required"></span></label> <input
+												type="text" class="input-custom input-full" id="identity" name="identity">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="input-wrapper">
+											<label>车次号</label> <input type="text"
+												class="input-custom input-full" id="carNum" name="carNum">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="input-wrapper">
+											<label>始发地 <span class="required"></span></label> <input
+												type="text" class="input-custom input-full" id="orginLocation" name="orginLocation">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="input-wrapper">
+											<label>目的地</label> <input type="text"
+												class="input-custom input-full" id="destinationLocation" name="destinationLocation">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="input-wrapper">
+											<label>出发时间 <span class="required"></span></label> <input
+												type="text" class="input-custom input-full" id="startTime" name="startTime">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="input-wrapper">
+											<label>到达时间</label> <input type="text"
+												class="input-custom input-full" id="reachTime" name="reachTime">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="input-wrapper">
+											<label>价格<span class="required"></span></label> <input
+												type="text" class="input-custom input-full" id="ticketPrice" name="ticketPrice">
+										</div>
+									</div>
+								</div>
+							</div>
+							<button  class="btn btn-border" onclick="refund1()">
+								<i class="icon icon-lightning"></i><span>退票</span>
+							</button>
+							<!--<button type="submit" id="change" class="btn btn-border" onclick="change()">-->
+								<!--<i class="icon icon-lightning"></i><span>改签</span>-->
+							<!--</button>-->
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="block">
+			<h1 class="text-center decor color">
+				改签 <b>可供选择的车次</b>
+			</h1>
+			<div class="divider"></div>
+		</div>
+		<!-- //Block -->
+		<!-- Block -->
+		<div class="block">
+			<div class="container">
+				<div class="table-wrapper">
+					<table class="table price-table" id="changeTable">
+						<tbody>
+							<tr class="table-header">
+								<th>始发地</th>
+								<th>出发时间</th>
+								<th>目的地</th>
+								<th>到达时间</th>
+								<th>班次号</th>
+								<th>价格</th>
+								<th>数量</th>
+								<th>操作</th>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	<!-- Footer -->
+	<div class="page-footer">
+		<div class="back-to-top hidden-xs">
+			<a href="#top"><span class="icon icon-lightning"></span></a>
+		</div>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">24/Hour Emergency Service</div>
+					<div class="col-sm-1 hidden-xs">&nbsp;</div>
+					<div class="col-sm-3">Free Consultations</div>
+					<div class="col-sm-1 hidden-xs">&nbsp;</div>
+					<div class="col-sm-3">1 (800) 765-43-21</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row footer-row">
+				<div class="col-sm-3 col-lg-3">
+					<div class="logo">
+						<a href="index.html"><img src="../images/logo-invert.png"
+							alt="Logo"></a>
+					</div>
+					<div class="hidden-xs">
+						<div class="copyright">
+							© 2016 Electrical Services. <br> All Rights Reserved
+						</div>
+						<div class="social-links">
+							<ul>
+								<li><a class="icon icon-twitter" href="#"></a></li>
+								<li><a class="icon icon-facebook" href="#"></a></li>
+								<li><a class="icon icon-instagram" href="#"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<ul class="contact-list">
+						<li><span class="list-label"><b>P</b>hone: </span> <span
+							class="text">1 (800) 765-43-21</span></li>
+						<li><span class="list-label"><b>E</b>-mail:</span> <span
+							class="text"><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></span></li>
+						<li><span class="list-label"><b>A</b>ddress:</span> <span
+							class="text">8494 Signal Hill Road Manassas,<br> VA,
+								20110
+						</span></li>
+						<li>Mon-Fri <b>08:00</b> AM - <b>05:00</b> PM, Sat-Sun
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-5">
+					<div id="footer-map"></div>
+				</div>
+				<div class="visible-xs text-center">
+					<div class="copyright">
+						Copyright &copy; 2017.Company name All rights reserved.More
+						Templates <a href="http://www.cssmoban.com/" target="_blank"
+							title="模板之家">模板之家</a> - Collect from <a
+							href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+					</div>
+					<div class="social-links">
+						<ul>
+							<li><a class="icon icon-twitter" href="#"></a></li>
+							<li><a class="icon icon-facebook" href="#"></a></li>
+							<li><a class="icon icon-instagram" href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Footer -->
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/plugins/bootstrap.min.js"></script>
+	<script src="../js/plugins/slick.min.js"></script>
+	<script src="../js/plugins/jquery.form.js"></script>
+	<script src="../js/plugins/jquery.validate.min.js"></script>
+	<script src="../js/custom.js"></script>
+	<script language="JavaScript">
+        fillerIn()
+		var json = [];
+        var storage = window.localStorage;
+        var username = storage["username"];
+        // ajax传递数据
+        var json = {
+            "username" : username
+        } // 这里的orderId是指订单id,tripsId是指新车票的id
+        // ajax提交数据
+        $.ajax({
+            type : 'POST',
+            url : base_url +'/getorder',
+            data : JSON.stringify(json),
+            contentType : 'application/json;charset=utf-8',
+            dataType : 'json',
+            success : function(data) {
+                if (data.stateCode === 200) {
+                    // 订单信息查询成功
+                    console.log("11")
+                    console.log(data.data)
+                    console.log("查询订单信息成功，呈现到订单信息的页面当中");
+                    //暂时的解决掉数据的参数传递问题
+                    window.localStorage.setItem("orderItem",JSON.stringify(data.data));
+                    json = JSON.stringify(data.data)
+                    // $("#orderTable").html("");
+                    $("#orderTable").siblings(
+						'tr'
+					).remove()
+
+
+
+                    for (var i= 0;i<data.data.length; i++) {
+                        var tr;
+                        tr = '<td>' + data.data[i].trueName + '</td>' + '<td>'
+                            + data.data[i].orginLocation + '</td>' + '<td>'
+                            + data.data[i].startTime + '</td>' + '<td>'
+                            + data.data[i].destinationLocation + '</td>'
+                            + '<td>' + data.data[i].reachTime + '</td>'
+                            + '<td>' + data.data[i].carNum + '</td>' + '<td>'
+                            + data.data[i].ticketPrice + '</td>' + '<td>'
+                            + data.data[i].status + '</td>' + '<td>'
+                            + '<button onclick="orderDetail(' + i + ')'+'">查看</button>'
+                            + '</td>';
+                        $("#orderTable").append('<tr>' + tr + '</tr>');
+                    }
+                } else
+                // 查询失败,错误信息在data.msg里面（未填写个人信息，请完善个人信息）
+                    alert("错误信息：" + data.msg)
+
+            }
+        })
+
+        function refund1() {
+            console.log("实现用户退票的操作");
+            //获取身份证号，车次号，出发时间，始发地
+            // var idCardNum = $("#identity").val();
+            // var carNum = $("#carNum").val();
+            var carNum = $("#carNum").val();
+            var startTime = $("#startTime").val();
+            var reachTime = $("#reachTime").val();
+            var json = {
+                "username" : window.localStorage.getItem("username"),
+                "carNum" : carNum,
+                "startTime" : startTime,
+                "reachTime" : reachTime
+            }
+            // ajax提交数据
+            $.ajax({
+                type:'POST',
+                url: base_url +'/ticketrefund',
+                data:JSON.stringify(json),
+                contentType:'application/json;charset=utf-8',
+                dataType:'json',
+                success : function(data) {
+                    if (data.stateCode == "200") {
+                        // 个人信息查询成功
+                        console.log("退票成功，呈现到个人信息的页面当中");
+                        window.location.href = 'orderForm.html';
+                    } else
+                    // 查询失败,错误信息在data.msg里面（未填写个人信息，请完善个人信息）
+                        alert("错误信息：" + data.msg)
+                }
+            })
+        }
+        function orderDetail(i) {
+            // 在当前界面当中填充好详细信息然后再实现改签等的操作
+             $("#trueName").val('');
+             $("#phone").val('');
+             $("#identity").val('');
+             $("#carNum").val('');
+             $("#orginLocation").val('');
+             $("#destinationLocation").val('');
+             $("#startTime").val('');
+             $("#reachTime").val('');
+             $("#ticketPrice").val('');
+             var data = JSON.parse(json);
+             console.log(data)
+			console.log(i)
+             data = data[i];
+             console.log("用户点击某个订单呈现出详细信息");
+             $("#trueName").val(data.trueName);
+             $("#phone").val(data.phoneNum);
+             $("#identity").val(data.idCardNum);
+             $("#carNum").val(data.carNum);
+             $("#orginLocation").val(data.orginLocation);
+             $("#destinationLocation").val(data.destinationLocation);
+             $("#startTime").val(data.startTime);
+             $("#reachTime").val(data.reachTime);
+             $("#ticketPrice").val(data.ticketPrice);
+        }
+	</script>
+
+
+</body>
+</html>

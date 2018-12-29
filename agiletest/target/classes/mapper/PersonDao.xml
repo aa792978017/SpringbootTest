@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--对应接口，写入sql语句-->
+
+<mapper namespace="com.agile.agiletest.dao.PersonDao">
+    <insert id="insertUserInfo" useGeneratedKeys="true">
+        <selectKey keyProperty="id" resultType="Integer" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO person (true_name, id_card_num, phone_num, age)
+        VALUES (#{trueName}, #{idCardNum}, #{phoneNum}, #{age})
+    </insert>
+
+
+    <update id="updateUserInfo" parameterType="com.agile.agiletest.pojo.Person">
+        UPDATE  person SET
+        <if test="trueName != null and trueName != ''">
+            true_name = #{trueName}
+        </if>
+        <if test="idCardNum != null and idCardNum != ''">
+            ,id_card_num = #{idCardNum}
+        </if>
+        <if test="phoneNum != null and phoneNum != ''">
+            ,phone_num = #{phoneNum}
+        </if>
+        <if test="age != null and age != ''">
+            ,age = #{age}
+        </if>
+        where id = #{id}
+    </update>
+
+    <select id="getPersonInfo1" resultType="com.agile.agiletest.pojo.Person"  parameterType="string">
+        select * from person where id = (select person_id from user where username = #{username})
+    </select>
+</mapper>
